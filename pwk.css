@@ -1,0 +1,233 @@
+body{
+    background-color: rgb(36, 36, 44);
+    color: white;   
+}
+
+p{
+    text-align: justify;
+}
+
+*{
+    box-sizing: border-box;
+}
+/* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+/* a:link {
+    color: rgb(255, 255, 255);
+  } */
+  
+  /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+  a:visited {
+    color: rgba(3, 23, 6, 0.701);
+  } 
+  
+  /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+  a:hover {
+    color: rgb(8, 147, 38);
+  }
+  
+  /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+  a:active {
+    color:rgb(255, 246, 228);
+  }
+
+.p-navigasi{
+    border: 0px solid black;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+.n-awal,.n-kedua{
+    text-align: left;
+}
+.a-wiki{
+    text-decoration: none
+}
+
+.navigasi{
+    text-decoration: none;
+}
+
+.f-img{
+    width: 100%;
+    max-height: 300px;
+    object-fit:cover;   
+    object-position: center;
+    border-radius: 5px;
+}
+
+/* header */
+.judul{
+    font-size: 35px;
+}
+
+
+.home {
+    height: 80px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+}
+
+.home p{
+    font-size: 10px;
+}
+
+nav ul{
+    display: flex;
+    /* padding-inline: 4rem; */
+    gap: 2rem;
+}
+
+nav li{
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+ }
+
+/* main */
+main{
+    display: flex;
+    overflow: auto;
+
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+    main aside {
+      align-self: stretch;
+    }
+    section img{
+    width: 100%;
+    max-height: 300px;
+    object-fit:cover;   
+    object-position: center;
+    border-radius: 5px;
+    }
+  }
+
+/* untuk menerapkan float harus di bagian kepala nya (div,aside) */
+#content{
+    flex: 5;
+
+    display: flex;  
+    flex-flow: column nowrap
+} 
+
+aside{
+    padding-left: 20px;
+    flex: 1;
+
+}
+
+h2{
+    color: aqua;
+}
+
+h3{
+    color: rgb(41, 168, 41);
+}
+#sejarah::first-letter{
+    font-size: 75px;
+}
+
+.h-sejarah{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding:15px ;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#geografis::first-letter{
+    font-size: 75px;
+}
+
+.h-geografis{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding:15px ;
+    margin: 10px;
+    margin-top: 20px;
+}
+ 
+#wisata::first-letter{
+    font-size: 75px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding:15px ;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#sejarah,#geografis,#wisata{
+    letter-spacing: 4px;
+    text-shadow: -5px -5px 5px black;
+}
+
+.profile{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding:15px ;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+section img{
+    max-height:300px ;
+}
+
+figure img{
+    width: 150px;
+}
+  
+@media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+/* footer */
+footer{
+    background-color: #00c8eb;
+    text-align: center;
+    padding-bottom:5px ;
+}
+
+footer h3{
+    color: black;
+
+}
